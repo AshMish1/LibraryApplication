@@ -274,7 +274,7 @@ public class LibraryOperation {
 
 				bookList.get(x).status = "In";
 				// implement date/time sutff
-				bookList.get(x).borrowDate = null;
+				bookList.get(x).borrowDate = LocalDate.parse("2016-06-23");
 				//bookList.get(x).returnDate = rDate;
 
 				int p = 0;
@@ -630,8 +630,10 @@ public class LibraryOperation {
 			/*if (LibraryOperation.menuChoice == 0) {
 				break;
 			}*/
-
-		} // end of while loop.
+			
+		}// end of while loop.
+		
+		FileInputOutput.writeToFile(bookList);
 		System.out.println("\n\n");
 		System.out.println("You have Exited the Library!\nThank");
 		System.out.println("\n\n");

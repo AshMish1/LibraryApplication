@@ -166,7 +166,19 @@ public class LibraryItem {
 				+ "\nId:....................." + id + "\n----------------------------";
 		return BookInfo;
 	}
-	public void run() {
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return title + ", " + author + ", " + genre + ", " + status
+				+ ", " + holds + ", " + returnDate + ", " + borrowDate + ", " + id;
+	}
+	
+	
+	
+	/*public void run() {
 
 		LibraryOperation.displayMenu();// Displays the main menu and ask for
 										// choice.
@@ -249,4 +261,4 @@ public class LibraryItem {
 		System.out.println("\n\n\n\n\n");
 
 	}// End of run() method.
-}
+*/}

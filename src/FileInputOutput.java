@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
@@ -53,4 +54,24 @@ public class FileInputOutput {
 //	public static void clearFile() throws IOException {
 //		Files.delete(booksPath);
 //	}
+	public static void writeToFile(ArrayList<LibraryItem> bookList) {
+		PrintWriter printWriter = null;
+		try {
+			printWriter = new PrintWriter(new FileOutputStream("LibraryItems.txt",false));
+			for(LibraryItem book: bookList ) {
+				printWriter.println(book);
+				}
+			} 
+		catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			}
+		 finally {
+				if (printWriter != null) {
+					printWriter.flush();
+					printWriter.close();
+				}
+			}
+	}
 }
+

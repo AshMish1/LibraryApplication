@@ -1,7 +1,7 @@
 Harry Potter and the Sorcerer’s Stone, J.K. Rowling, Fantasy, In, 0, 2016-06-23, 2016-06-23, 1
 Harry Potter and the Chamber of Secrets, J.K. Rowling, Fantasy, In, 0, 2016-06-23, 2016-06-23, 2
 Harry Potter and the Prisoner of Azkaban, J.K. Rowling, Fantasy, In, 0, 2016-06-23, 2016-06-23, 3
-Harry Potter and the Goblet of Fire, J.K. Rowling, Fantasy, In, 0, 2016-06-23, 2016-06-23, 4 
+Harry Potter and the Goblet of Fire, J.K. Rowling, Fantasy, In, 0, 2016-06-23, 2016-06-23, 4
 Harry Potter and Order of the Phoenix, J.K. Rowling, Fantasy, In, 0, 2016-06-23, 2016-06-23, 5
 Harry Potter and the Half-Blood Prince, J.K. Rowling, Fantasy, In, 0, 2016-06-23, 2016-06-23, 6
 Harry Potter and the Deathly Hallows, J.K. Rowling, Fantasy, In, 0, 2016-06-23, 2016-06-23, 7
@@ -9,4 +9,4 @@ In Search of Lost Time, Marcel Proust, Non-Fiction, In, 0, 2016-06-23, 2016-06-2
 Ulysses, James Joyce, Non-Fiction, In, 0, 2016-06-23, 2016-06-23, 9
 Moby Dick, Herman Melville, Fiction, In, 0, 2016-06-23, 2016-06-23, 10
 Freakonomics: A Rogue Economist Explores the Hidden Side of Everything, Stephen Dubner, Education/Sociology, In, 0, 2016-06-23, 2016-06-23, 11
-Art of War, Sun Tzu, Philosophy, In, 0, 2016-06-23, 2016-06-23, 12
+Art of War, Sun Tzu, Philosophy, In, 0, 2016-07-06, 2016-06-23, 12
