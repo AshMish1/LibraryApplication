@@ -9,12 +9,16 @@ public class LibraryApplication {
 	public static void main(String[] args) {
 		
 		
+		System.out.println("Hello! Welcome to the Library.\n\nHow can I help you?");
 		
-		System.out.println("Hello");
+
+		LibraryOperation.run();
 		
-		ArrayList<LibraryItem> books = FileInputOutput.getFile();
 		
-		System.out.println(books.get(3).getTitle());
+	//	ArrayList<LibraryItem> books = FileInputOutput.getFile();
+		
+		
+		
 		}
 	}
 

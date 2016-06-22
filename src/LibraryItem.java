@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -167,4 +166,87 @@ public class LibraryItem {
 				+ "\nId:....................." + id + "\n----------------------------";
 		return BookInfo;
 	}
+	public void run() {
+
+		LibraryOperation.displayMenu();// Displays the main menu and ask for
+										// choice.
+
+		exit: while (LibraryOperation.menuChoice != 0) {
+
+			// Choice 1: Check library list:
+
+			if (LibraryOperation.menuChoice == 1 && LibraryOperation.bookList.size() > 0) {
+				LibraryOperation.displayBookList();
+				LibraryOperation.displayMenu();
+			}
+
+			if (LibraryOperation.menuChoice == 1 && LibraryOperation.bookList.isEmpty()) {
+				System.out.println(Messages.invalidInputMessage);
+				LibraryOperation.displayMenu();
+			}
+
+			// Choice 2: Borrow a book:
+
+			if (LibraryOperation.menuChoice == 2 && LibraryOperation.bookList.size() > 0) {
+				LibraryOperation.borrowBook();
+			}
+
+			if (LibraryOperation.menuChoice == 2 && LibraryOperation.bookList.isEmpty()) {
+				System.out.println(Messages.invalidInputMessage);
+				LibraryOperation.displayMenu();
+			}
+
+			// Choice 3: Return a book:
+
+			if (LibraryOperation.menuChoice == 3 && LibraryOperation.bookList.size() > 0
+					&& LibraryOperation.borrowedBooks.size() > 0) {
+				LibraryOperation.returnBook();
+				LibraryOperation.displayMenu();
+			}
+
+			if (LibraryOperation.menuChoice == 3 && LibraryOperation.bookList.isEmpty()) {
+				System.out.println(Messages.invalidInputMessage);
+				LibraryOperation.displayMenu();
+			}
+
+			// Choice 4: donate a book:
+
+			if (LibraryOperation.menuChoice == 4) {
+				// createBook();
+				LibraryOperation.addBook();
+				LibraryOperation.displayMenu();
+			}
+			// Choice 5: Renue a book:
+
+			if (LibraryOperation.menuChoice == 5 && LibraryOperation.bookList.size() > 0) {
+				System.out.println("Sorry this choice is not yet implemented.");
+			}
+
+			if (LibraryOperation.menuChoice == 5 && LibraryOperation.bookList.isEmpty()) {
+				System.out.println(Messages.invalidInputMessage);
+				LibraryOperation.displayMenu();
+			}
+
+			// Choice 6: Display main Menu:
+
+			if (LibraryOperation.menuChoice == 7) {
+				if (LibraryOperation.bookList.size() > 0) {
+					LibraryOperation.displayMenu();
+				} else if (LibraryOperation.bookList.isEmpty()) {
+					LibraryOperation.displayMenu();
+				}
+			}
+
+			// Choice 0: Exit the program:
+
+			if (LibraryOperation.menuChoice == 0) {
+				break exit;
+			}
+
+		} // end of while loop.
+		System.out.println("\n\n\n\n\n");
+		System.out.println("You have Exited the Library!");
+		System.out.println("\n\n\n\n\n");
+
+	}// End of run() method.
 }
